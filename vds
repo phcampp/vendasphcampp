@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços de Upar Contas</title>
+    <style>
+        body {
+            background-color: #1e1e2e;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #292b38;
+        }
+        header h1 {
+            color: #00ff7f;
+            font-size: 2.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #00ff7f;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .service-card {
+            background-color: #2f3242;
+            border: 1px solid #00ff7f;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            display: inline-block;
+            width: 200px;
+        }
+        .service-card h3 {
+            color: #00ff7f;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #292b38;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Up Your Game</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Serviços</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Nossos Serviços</h2>
+        <div class="service-card">
+            <h3>Conta Bronze ➡️ Prata</h3>
+            <p>Upe sua conta do nível Bronze para Prata em poucos dias.</p>
+            <button>Comprar Agora</button>
+        </div>
+        <div class="service-card">
+            <h3>Conta Prata ➡️ Ouro</h3>
+            <p>Chegue ao nível Ouro com facilidade e segurança.</p>
+            <button>Comprar Agora</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Up Your Game. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
