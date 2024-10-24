@@ -3,82 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços de Upar Contas</title>
+    <title>PHCampp Upamentos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #1e1e2e;
-            color: #fff;
+            background-color: #000; /* Cor de fundo preta */
+            color: #fff; /* Texto branco */
             font-family: 'Arial', sans-serif;
         }
         header {
+            background-color: #ff0000; /* Cor vermelha para o cabeçalho */
+            padding: 50px 0;
             text-align: center;
-            padding: 20px;
-            background-color: #292b38;
+            position: relative;
         }
         header h1 {
-            color: #00ff7f;
-            font-size: 2.5rem;
+            font-size: 3em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
-        nav {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
+        header::before {
+            content: "phcampp";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            font-size: 10em;
+            color: rgba(255, 0, 0, 0.1); /* Marca d'água vermelha clara */
+            z-index: 0;
+            text-align: center;
+            pointer-events: none;
         }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #00ff7f;
+        header h1, header p {
+            position: relative;
+            z-index: 1;
         }
         section {
-            padding: 20px;
-            text-align: center;
+            padding: 40px;
         }
-        .service-card {
-            background-color: #2f3242;
-            border: 1px solid #00ff7f;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 10px;
-            display: inline-block;
+        .game-images {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .game-images img {
             width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
         }
-        .service-card h3 {
-            color: #00ff7f;
+        .discord-banner {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); /* Efeito de sombra no banner */
+        }
+        .price-info {
+            color: #ff0000;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+        .feedback-section {
+            background-color: #111;
+            padding: 40px;
+            margin-top: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
         }
         footer {
+            background-color: #111;
             text-align: center;
             padding: 20px;
-            background-color: #292b38;
+            color: #777;
+        }
+        .feedback-section input, .feedback-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #222;
+            color: #fff;
+            border: 1px solid #555;
+        }
+        .feedback-section input[type="submit"] {
+            background-color: #ff0000;
+            border: none;
+            cursor: pointer;
+        }
+        .feedback-section input[type="submit"]:hover {
+            background-color: #ff4444;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Up Your Game</h1>
-        <nav>
-            <a href="#">Início</a>
-            <a href="#">Serviços</a>
-            <a href="#">Sobre</a>
-            <a href="#">Contato</a>
-        </nav>
-    </header>
 
-    <section>
-        <h2>Nossos Serviços</h2>
-        <div class="service-card">
-            <h3>Conta Bronze ➡️ Prata</h3>
-            <p>Upe sua conta do nível Bronze para Prata em poucos dias.</p>
-            <button>Comprar Agora</button>
-        </div>
-        <div class="service-card">
-            <h3>Conta Prata ➡️ Ouro</h3>
-            <p>Chegue ao nível Ouro com facilidade e segurança.</p>
-            <button>Comprar Agora</button>
-        </div>
-    </section>
+<header>
+    <h1>Bem-vindo ao PHCampp</h1>
+    <p>Especializado em upamentos de contas de Blood Strike, Free Fire, Fortnite, Roblox e Standoff 2</p>
+</header>
 
-    <footer>
-        <p>&copy; 2024 Up Your Game. Todos os direitos reservados.</p>
-    </footer>
+<section class="container">
+    <h2>O que fazemos</h2>
+    <p>Oferecemos serviços de upamento de contas em diversos jogos, com variações de preços. Os jogos incluem:</p>
+    <ul>
+        <li>Blood Strike</li>
+        <li>Free Fire</li>
+        <li>Fortnite</li>
+        <li>Roblox</li>
+        <li>Standoff 2</li>
+    </ul>
+    <p class="price-info">Os preços começam a partir de <strong>R$ 19,90</strong>. Entre em contato pelo Discord para mais detalhes.</p>
+</section>
+
+<!-- Seção de imagens dos jogos -->
+<section class="container text-center">
+    <h2>Imagens dos Jogos</h2>
+    <div class="game-images">
+        <img src="https://example.com/blood-strike.jpg" alt="Blood Strike">
+        <img src="https://example.com/free-fire.jpg" alt="Free Fire">
+        <img src="https://example.com/fortnite.jpg" alt="Fortnite">
+        <img src="https://example.com/roblox.jpg" alt="Roblox">
+        <img src="https://example.com/standoff2.jpg" alt="Standoff 2">
+    </div>
+</section>
+
+<section class="container text-center">
+    <h2>Contato</h2>
+    <p>Fale comigo no Discord clicando no banner abaixo:</p>
+    <a href="https://discord.gg/bgWEqmFw" target="_blank">
+        <img src="https://discordapp.com/api/guilds/81384788765712384/widget.png?style=banner2" alt="Discord Banner" class="discord-banner">
+    </a>
+</section>
+
+<section class="container feedback-section">
+    <h2>Comentários / Feedback</h2>
+    <form>
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <textarea name="comentario" rows="4" placeholder="Deixe seu feedback" required></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 PHCampp. Todos os direitos reservados.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
